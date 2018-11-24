@@ -29,5 +29,5 @@ int main(){
             array.push_back(word); //put the word on the list
         }
     }
-    //technically supposed to be a return 0 here, but programs works either way
+    //technically supposed to be a return 0 here, but the program works either way
 }
