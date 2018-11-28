@@ -7,7 +7,7 @@ using namespace std;
 
 ifstream inFile; //defines the input file
 ofstream outFile("lyrics2.txt"); //defines the output file and its name
-string word; //defines the are where the current word from the file will be stored.
+string word; //defines the place where the current word from the file will be stored.
 vector<string> array; //defines the list that will be sued to store the words that have already been used. Note it's called array since I originally used an array but swiched to a vector since arrays are for when you want a limit to how many elements you can store in the list.
 bool isInFile; //defines a true or false statement for whether or not a worde is in the file.
 
