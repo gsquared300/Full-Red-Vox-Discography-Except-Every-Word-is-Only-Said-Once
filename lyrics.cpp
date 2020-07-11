@@ -17,7 +17,7 @@ int main(){
     
     while(!inFile.eof()){ //while the program has not reached the end of the file, run lines 19 to 32.
         isInFile = false;
-        getline(inFile, word); //go to the next line of the file and store whatever is on it to word.
+        inFile>>word; //go to the next set of characters between a space and/or the end of a line and store whatever is on it to word. Was previously getline(inFile, word);, where it ould look at the entire line, meaning I had to use one word per line. Pretty annoying. Still works with the previous way, so lyrics.txt is unchanged up to halfway into Realign.
         for(int i = 0; i < array.size(); i++){ //count to the number of words in the list and loop lines 22 to 25 while what your count is less than the size of the list.
             if(array[i] == word){ //if the word is in the list
                 isInFile = true;
